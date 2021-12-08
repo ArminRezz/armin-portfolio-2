@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components';
-import FacebookIcon from '@material-ui/icons/Facebook';
 import GithubIcon from '@material-ui/icons/GitHub';
-import YoutubeIcon from '@material-ui/icons/YouTube';
 import Particle from '../Components/Particle';
+
+//import FacebookIcon from '@material-ui/icons/Facebook';
+//import YoutubeIcon from '@material-ui/icons/YouTube';
 
 function HomePage() {
     return (
@@ -14,19 +15,11 @@ function HomePage() {
             <div className="typography">
                 <h1>Hi, I'm <span> Armin Rezaiyan </span></h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Atque nihil voluptates ea dolore vel 
-                    repellat? Quia tenetur non quam exercitationem. Lorem ipsum dolor sit amet.
+                    Thank you for taking a look at my portfolio website! I hope you enjoy!
                 </p>
                 <div className="icons">
-                    <a href="https://codepen.io/pen/" className="icon i-facebook">
-                        <FacebookIcon />
-                    </a>
-                    <a href="https://codepen.io/pen/" className="icon i-github">
+                    <a href="https://github.com/ArminRezz" className="icon i-github">
                         <GithubIcon />
-                    </a>
-                    <a href="https://codepen.io/pen/" className="icon i-youtube">
-                        <YoutubeIcon />
                     </a>
                 </div>
             </div>

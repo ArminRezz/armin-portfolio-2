@@ -12,7 +12,7 @@ function Particle() {
                     value:109,
                     density:{
                       enable: true,
-                      value_area: 1200
+                      value_area: 1400
                     }
                   },
                   color:{
@@ -24,7 +24,7 @@ function Particle() {
                       width: 0
                     },
                     polygon:{
-                      nb_sides: 6
+                      nb_sides: 2
                     }
                   },
                   line_linked: {
@@ -48,11 +48,11 @@ function Particle() {
                     }
                   },
                   size: {
-                    value: 4,
+                    value: 19,
                     random: true,
                     anim:{
                       speed: 40,
-                      size_min: 0.1
+                      size_min: 0.5
                     }
                   },
                   opacity: {

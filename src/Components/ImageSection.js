@@ -1,21 +1,21 @@
 import React from 'react'
 import styled from 'styled-components';
 import resume from '../img/resume.jpg';
+import miniArmin from '../img/miniArmin.JPG';
 import PrimaryButton from './PrimaryButton';
 
 function ImageSection() {
     return (
         <ImageSectionStyled>
             <div className="left-content">
-                <img src={resume} alt=""/>
+                <img src={miniArmin} alt=""/>
             </div>
             <div className="right-content">
-                <h4>I am <span>Lorem Ipsum</span></h4>
+                <h4>I am <span> Armin Rezaiyan </span></h4>
                 <p className="paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, natus quas vero enim 
-                    praesentium delectus est id fugiat ab libero adipisci recusandae at maxime veritatis! 
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, nesciunt.
-                    
+                    I have been proggramming since I was a kid. At first I began learning the basics of HTML, CSS, and JavaScript. 
+                    I then began learning JAVA, Python and C++ at school. I have always been fascinated by technology, trying to always stay on the bleeding edge.
+                    I love to solve difficult problems, and enjoy working with others. 
                 </p>
                 <div className="about-info">
                     <div className="info-title">
@@ -27,12 +27,12 @@ function ImageSection() {
                         <p>Service</p>
                     </div>
                     <div className="info">
-                        <p>: Lorem Ipsum</p>
-                        <p>: 36</p>
-                        <p>: Spainsh </p>
-                        <p>: Spanish, French, English </p>
-                        <p>: London, United Kingdom</p>
-                        <p>: Freelance</p>
+                        <p> Armin Rezaiyan</p>
+                        <p> 16 </p>
+                        <p> Iranian/Hungarian - American </p>
+                        <p> Farsi, Hungarian, English </p>
+                        <p> Maryland </p>
+                        <p> Web developer, Software engineer</p>
                     </div>
                 </div>
                 <PrimaryButton title={'Download Cv'} />

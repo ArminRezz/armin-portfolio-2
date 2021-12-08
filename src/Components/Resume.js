@@ -10,31 +10,32 @@ import ResumeItem from '../Components/ResumeItem';
 function Resume() {
     const briefcase = <BusinessCenterIcon />
     const school = <SchoolIcon />
+
+    function bulletedList() {
+        return (
+        <ul>
+            <li> - Utilizing HTML, JavaScript, Node.js, Java, SQL, and GIT for web development. </li> 
+            <li> - Employing Java to search, sort, and change CSV and Amazon DynamoDB, JSON files with the purpose of analyzing/comparing hardware specifications and prices. </li> 
+            <li> - Familiarity with GitHub branching, pull request, peer review, and DevOps environment. </li> 
+            <li> - Working in an agile development environment, participating in daily scrum meetings, and using Trello for task management. </li> 
+        </ul>
+        )
+    }
+
+
     return (
         <ResumeStyled>
             <Title title={'Resume'} span={'resume'} />
             <InnerLayout>
                 <div className="small-title">
-                    <SmallTitle icon={briefcase} title={'Working Experience'} />
+                    <SmallTitle icon={briefcase} title={'Internships'} />
                 </div>
                 <div className="resume-content">
                     <ResumeItem 
-                        year={'2015 - 2020'} 
-                        title={'Computer Science Teacher'}
-                        subTitle={'Sussex University'}
-                        text={'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa nihil impedit natus nostrum? Velit accusantium id quos, nihil vel quod.Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. '} 
-                    />
-                    <ResumeItem 
-                        year={'2015 - Present'} 
-                        title={'Full Stack Developer'}
-                        subTitle={'Microsoft Studios'}
-                        text={'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa nihil impedit natus nostrum? Velit accusantium id quos, nihil vel quod.Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. '} 
-                    />
-                    <ResumeItem 
-                        year={'2010 - 2017'} 
-                        title={'User Interface Designer'}
-                        subTitle={'Google Inc'}
-                        text={'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa nihil impedit natus nostrum? Velit accusantium id quos, nihil vel quod.Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. '} 
+                        year={'2021 - Present'} 
+                        title={'Software Engineering Internship'}
+                        subTitle={'Vortex Vector LLC'}
+                        text={bulletedList()} 
                     />
                 </div>
                 <div className="small-title u-small-title-margin">
@@ -42,22 +43,16 @@ function Resume() {
                 </div>
                 <div className="resume-content ">
                     <ResumeItem 
-                        year={'201 - 2022'} 
-                        title={'Computer Science Degree'}
-                        subTitle={'Sussex University'}
-                        text={'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa nihil impedit natus nostrum? Velit accusantium id quos, nihil vel quod.Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. '} 
+                        year={'2021 - 2023'} 
+                        title={'Associates Degree in Computer Science'}
+                        subTitle={'Germantown Montgomery College'}
+                        text={'Focus in STEM and Computer Science related classes. Participated in JV and Varsity Soccer. Graduated with high honors. '} 
                     />
                     <ResumeItem 
-                        year={'2015 - 2017'} 
-                        title={'A - Levels'}
-                        subTitle={'Church Hill High'}
-                        text={'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa nihil impedit natus nostrum? Velit accusantium id quos, nihil vel quod.Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. '} 
-                    />
-                    <ResumeItem 
-                        year={'2015 - 2017'} 
-                        title={'High School Graduation'}
-                        subTitle={'ABC School'}
-                        text={'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa nihil impedit natus nostrum? Velit accusantium id quos, nihil vel quod.Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. '} 
+                        year={'2019 - 2023'} 
+                        title={'High School Diploma'}
+                        subTitle={'Thomas S. Wootton High School'}
+                        text={'Focus in STEM and Computer Science related classes. Participated in JV and Varsity Soccer. Graduated with high honors.'} 
                     />
                 </div>
             </InnerLayout>
