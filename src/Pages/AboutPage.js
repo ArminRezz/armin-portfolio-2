@@ -5,10 +5,11 @@ import Title from '../Components/Title';
 import {MainLayout} from '../styles/Layouts';
 import ServicesSection from '../Components/ServicesSection';
 import ReviewsSection from '../Components/ReviewsSetion';
+import Particle from '../Components/Particle';
 
-function AboutPage() {
+function AboutPage({id}) {
     return (
-        <MainLayout>
+        <MainLayout id={id}>
             <AboutStyled >
                 <Title title={'About Me'} span={'About Me'} />
                 <ImageSection />

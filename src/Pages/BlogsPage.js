@@ -4,9 +4,9 @@ import Title from '../Components/Title';
 import blogs from '../data/blogs';
 import {MainLayout, InnerLayout} from '../styles/Layouts';
 
-function BlogsPage() {
+function BlogsPage({id}) {
     return (
-        <MainLayout>
+        <MainLayout id={id}>
             <BlogsStyled>
             <Title title={'Blogs'} span={'Blogs'} />
                 <InnerLayout className={'blog'}>

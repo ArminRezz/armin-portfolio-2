@@ -1,37 +1,93 @@
 import React from 'react'
 import styled from 'styled-components';
-import {NavLink} from 'react-router-dom';
+import { Link, animateScroll as scroll } from "react-scroll";
 import avatar from '../img/avatar2.jpg';
 
-function Navigation() {
+function Navigation() { 
+         
     return (
         <NavigationStyled>
-            <div className="avatar">
-                <img src={avatar} alt=""/>
+            <div className="avatar" >
+                <img src={avatar} alt="" />
             </div>
             <ul className="nav-items">
                 <li className="nav-item">
-                    <NavLink to="/" activeClassName="active-class" exact>Home</NavLink>
+                    <Link
+                    activeClass="active"
+                    to="section1"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                    >
+                    Home
+                    </Link>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/about" activeClassName="active-class" exact>About</NavLink>
+                    <Link
+                    activeClass="active"
+                    to="section2"
+                    spy={true}
+                    smooth={true}
+                    offset={60}
+                    duration={500}
+                    >
+                    About
+                    </Link>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/resume" activeClassName="active-class" exact>Resume</NavLink>
+                    <Link
+                    activeClass="active"
+                    to="section3"
+                    spy={true}
+                    smooth={true}
+                    offset={60}
+                    duration={500}
+                    >
+                    Resume
+                    </Link>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/portfolios" activeClassName="active-class" exact>Portfolios</NavLink>
+                    <Link
+                    activeClass="active"
+                    to="section4"
+                    spy={true}
+                    smooth={true}
+                    offset={60}
+                    duration={500}
+                    >
+                    Portfolios
+                    </Link>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/blogs" activeClassName="active-class" exact>Blogs</NavLink>
+                    <Link
+                    activeClass="active"
+                    to="section5"
+                    spy={true}
+                    smooth={true}
+                    offset={60}
+                    duration={500}
+                    >
+                    Blogs
+                    </Link>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/contact" activeClassName="active-class" exact>Contact</NavLink>
+                    <Link
+                    activeClass="active"
+                    to="section6"
+                    spy={true}
+                    smooth={true}
+                    offset={60}
+                    duration={500}
+                    >
+                    Contact
+                    </Link>
                 </li>
             </ul>
             <footer className="footer">
-                <p>@2021 <b> Armin Rezaiyan </b></p>
+                <p> @2021 <b> Armin Rezaiyan </b></p>
             </footer>
+           
         </NavigationStyled>
     )
 }
@@ -51,7 +107,7 @@ const NavigationStyled = styled.nav`
         padding: 1rem 0;
         img{
             width: 70%;
-            border-radius: 50%;
+            border-radius: 25%;
             border: 8px solid var(--border-color);
         }
     }
@@ -59,7 +115,7 @@ const NavigationStyled = styled.nav`
     .nav-items{
         width: 100%;
         text-align: center;
-        .active-class{
+        .active {
             background-color: var(--primary-color-light);
             color: white;
         }
@@ -67,13 +123,14 @@ const NavigationStyled = styled.nav`
             display: block;
             a{
                 display: block;
-                padding: .45rem 0;
+                padding: 1.2rem 0;
                 position: relative;
                 z-index: 10;
                 text-transform: uppercase;
                 transition: all .4s ease-in-out;
                 font-weight: 600;
-                letter-spacing: 1px;
+                font-size: 1rem;
+                letter-spacing: 6px;
                 &:hover{
                     cursor: pointer;
                     color: var(--white-color);
@@ -84,9 +141,8 @@ const NavigationStyled = styled.nav`
                     bottom: 0;
                     left: 0;
                     width: 0;
-                    height: 50%;
+                    height: 100%;
                     background-color: var( --primary-color);
-                    transition: All 0.4s cubic-bezier(1,-0.2,.25,.95) ;
                     opacity: 0.21;
                     z-index: -1;
                 }

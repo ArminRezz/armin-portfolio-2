@@ -9,7 +9,7 @@ function Particle() {
               params={{
                 particles: {
                   number:{
-                    value:109,
+                    value: 100,
                     density:{
                       enable: true,
                       value_area: 1400
@@ -28,10 +28,10 @@ function Particle() {
                     }
                   },
                   line_linked: {
-                    enable: false,
-                    distance: 150,
-                    opacity: 0.9,
-                    width: 1,
+                    enable: true,
+                    distance: 69,
+                    opacity: 0.7,
+                    width: 2,
                     shadow: {
                       enable: true,
                       color: "#e74c3c",
@@ -41,25 +41,25 @@ function Particle() {
                   move:{
                     enable: true,
                     random: true,
-                    speed: .6,
+                    speed: .2,
                     attract:{
                       rotateX: 600,
                       rotateY: 1200
                     }
                   },
                   size: {
-                    value: 19,
+                    value: 7,
                     random: true,
                     anim:{
-                      speed: 40,
-                      size_min: 0.5
+                      speed: 8,
+                      size_min: 5
                     }
                   },
                   opacity: {
                     value: 0.8,
                     anim: {
-                      speed: 1,
-                      opacity_min: 0.1
+                      speed: 0.2,
+                      opacity_min: 0.3
                     }
                   }
                 }

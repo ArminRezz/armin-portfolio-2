@@ -6,12 +6,10 @@ import Particle from '../Components/Particle';
 //import FacebookIcon from '@material-ui/icons/Facebook';
 //import YoutubeIcon from '@material-ui/icons/YouTube';
 
-function HomePage() {
+function HomePage({id}) {
     return (
-        <HomePageStyled>
-            <div className="particle-con">
-                <Particle />
-            </div>
+        <HomePageStyled id={id}>
+            <Particle />
             <div className="typography">
                 <h1>Hi, I'm <span> Armin Rezaiyan </span></h1>
                 <p>

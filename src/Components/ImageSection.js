@@ -35,7 +35,7 @@ function ImageSection() {
                         <p> Web developer, Software engineer</p>
                     </div>
                 </div>
-                <PrimaryButton title={'Download Cv'} />
+                <PrimaryButton title={'DOWNLOAD CV'} />
             </div>
         </ImageSectionStyled>
     )

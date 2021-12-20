@@ -10,19 +10,6 @@ import ResumeItem from '../Components/ResumeItem';
 function Resume() {
     const briefcase = <BusinessCenterIcon />
     const school = <SchoolIcon />
-
-    function bulletedList() {
-        return (
-        <ul>
-            <li> - Utilizing HTML, JavaScript, Node.js, Java, SQL, and GIT for web development. </li> 
-            <li> - Employing Java to search, sort, and change CSV and Amazon DynamoDB, JSON files with the purpose of analyzing/comparing hardware specifications and prices. </li> 
-            <li> - Familiarity with GitHub branching, pull request, peer review, and DevOps environment. </li> 
-            <li> - Working in an agile development environment, participating in daily scrum meetings, and using Trello for task management. </li> 
-        </ul>
-        )
-    }
-
-
     return (
         <ResumeStyled>
             <Title title={'Resume'} span={'resume'} />
@@ -35,7 +22,13 @@ function Resume() {
                         year={'2021 - Present'} 
                         title={'Software Engineering Internship'}
                         subTitle={'Vortex Vector LLC'}
-                        text={bulletedList()} 
+                        text={
+                        <ul>
+                            <li> - Utilizing HTML, JavaScript, Node.js, Java, SQL, and GIT for web development. </li> 
+                            <li> - Employing Java to search, sort, and change CSV and Amazon DynamoDB, JSON files with the purpose of analyzing/comparing hardware specifications and prices. </li> 
+                            <li> - Familiarity with GitHub branching, pull request, peer review, and DevOps environment. </li> 
+                            <li> - Working in an agile development environment, participating in daily scrum meetings, and using Trello for task management. </li> 
+                        </ul>} 
                     />
                 </div>
                 <div className="small-title u-small-title-margin">
@@ -46,18 +39,18 @@ function Resume() {
                         year={'2021 - 2023'} 
                         title={'Associates Degree in Computer Science'}
                         subTitle={'Germantown Montgomery College'}
-                        text={'Focus in STEM and Computer Science related classes. Participated in JV and Varsity Soccer. Graduated with high honors. '} 
+                        text={'Focus in STEM and Computer Science related classes.'}
                     />
                     <ResumeItem 
                         year={'2019 - 2023'} 
                         title={'High School Diploma'}
                         subTitle={'Thomas S. Wootton High School'}
-                        text={'Focus in STEM and Computer Science related classes. Participated in JV and Varsity Soccer. Graduated with high honors.'} 
+                        text={'Focus in STEM and Computer Science related classes. Participant of the AOIT(Academy of Information Techonology) and STARS(Science, Technology, and Research).'} 
                     />
                 </div>
             </InnerLayout>
         </ResumeStyled>    
-    )
+    );
 }
 
 const ResumeStyled = styled.section`

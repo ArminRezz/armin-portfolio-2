@@ -11,10 +11,8 @@ import BlogsPage from './Pages/BlogsPage';
 import ContactPage from './Pages/ContactPage';
 import Brightness4Icon from '@material-ui/icons/Brightness4';
 import MenuIcon from '@material-ui/icons/Menu';
-import { Route, Switch as Switching } from "react-router";
 import Switch from '@material-ui/core/Switch'
 import { IconButton } from "@material-ui/core";
-
 
 function App() {
   const [theme, setTheme] = useState('dark-theme');
@@ -51,7 +49,6 @@ function App() {
                   inputProps={{ 'aria-label': '' }}
                   size="medium"
                   onClick={themeToggler}
-                  
                 />
               </div>
             </div>
@@ -71,28 +68,15 @@ function App() {
             <div className="line-4"></div>
           </div>
 
-          <Switching>
-            <Route path="/" exact>
-              <HomePage />
-            </Route>
-            <Route path="/about" exact>
-              <AboutPage />
-            </Route>
-            <Route path="/resume" exact>
-              <ResumePage />
-            </Route>
-            <Route path="/portfolios" exact>
-              <PortfoliosPage />
-            </Route>
-            <Route path="/blogs" exact>
-               <BlogsPage />
-            </Route>
-            <Route path="/contact" exact>
-              <ContactPage />
-            </Route>
-          </Switching>
+          <HomePage id="section1" />
+          <AboutPage id="section2" />
+          <ResumePage id="section3" />
+          <PortfoliosPage id="section4" />
+          <BlogsPage id="section5" />
+          <ContactPage id="section6" />
 
         </MainContentStyled>
+
     </div>
   );
 }
@@ -110,10 +94,10 @@ const MainContentStyled = styled.main`
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    opacity: 0.4;
+    opacity: 0.2;
     z-index: -1;
     .line-1, .line-2, .line-3, .line-4{
-      width: 1px;
+      width: 2px;
       min-height: 100vh;
       background-color: var(--border-color);
     }
