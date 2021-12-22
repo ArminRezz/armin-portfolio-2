@@ -8,7 +8,7 @@ function Navigation() {
     return (
         <NavigationStyled>
             <div className="avatar" >
-                <img src={avatar} alt="" />
+                <img src={avatar} alt="" onclicked={scroll.scrollToTop()} />
             </div>
             <ul className="nav-items">
                 <li className="nav-item">
@@ -118,6 +118,9 @@ const NavigationStyled = styled.nav`
         .active {
             background-color: var(--primary-color-light);
             color: white;
+            a {
+                text-decoration: underline; 
+            }
         }
         li{
             display: block;

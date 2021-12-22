@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
 import GithubIcon from '@material-ui/icons/GitHub';
 import Particle from '../Components/Particle';
@@ -9,7 +9,7 @@ import Particle from '../Components/Particle';
 function HomePage({id}) {
     return (
         <HomePageStyled id={id}>
-            <Particle />
+            <Particle /> 
             <div className="typography">
                 <h1>Hi, I'm <span> Armin Rezaiyan </span></h1>
                 <p>
