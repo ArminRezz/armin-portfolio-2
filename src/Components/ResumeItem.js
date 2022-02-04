@@ -21,6 +21,7 @@ const ResumeItemStyled = styled.div`
     @media screen and (max-width: 421px){
         p, h5, h6{
             font-size: 80%;
+            
         }
     }
     &:not(:last-child){

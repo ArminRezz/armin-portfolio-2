@@ -47,7 +47,6 @@ function ContactPage({id}) {
                     <ContactItem title={'Phone'} icon={phone} cont1={'301 - 887 - 7747'} cont2={''} />
                     <ContactItem title={'Email'} icon={email} cont1={'arnojani2005@gmail.com'} cont2={'arnojani20051@gmail.com'} />
                     <ContactItem title={'Address'} icon={location} cont1={'30 Flints Grove Dr, North Potomac, Maryland'} cont2={'United States'} />
-                    
                 </div>
             </InnerLayout>
             </ContactPageStyled>

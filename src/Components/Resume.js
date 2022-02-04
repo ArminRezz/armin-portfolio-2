@@ -24,10 +24,14 @@ function Resume() {
                         subTitle={'Vortex Vector LLC'}
                         text={
                         <ul>
-                            <li> - Utilizing HTML, JavaScript, Node.js, Java, SQL, and GIT for web development. </li> 
-                            <li> - Employing Java to search, sort, and change CSV and Amazon DynamoDB, JSON files with the purpose of analyzing/comparing hardware specifications and prices. </li> 
-                            <li> - Familiarity with GitHub branching, pull request, peer review, and DevOps environment. </li> 
-                            <li> - Working in an agile development environment, participating in daily scrum meetings, and using Trello for task management. </li> 
+                            <br></br>
+                            <li> -  Utilizing HTML, JavaScript, Node.js, Java, SQL, and GIT for web development. </li> 
+                            <br></br>
+                            <li> -  Employing Java to search, sort, and change CSV and Amazon DynamoDB, JSON files with the purpose of analyzing/comparing hardware specifications and prices. </li> 
+                            <br></br>
+                            <li> -  Familiarity with GitHub branching, pull request, peer review, and DevOps environment. </li> 
+                            <br></br>
+                            <li> -  Working in an agile development environment, participating in daily scrum meetings, and using Trello for task management. </li> 
                         </ul>} 
                     />
                 </div>
